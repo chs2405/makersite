@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.flying-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #191919;
+  flex-direction: column;
+  z-index: 2;
+}
+.flying-title {
+  color: rgb(202, 247, 255);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 8em;
+  background-color: #191919;
+  overflow: hidden;
+}
+.flying-text {
+  display: inline-block;
+  transform: translateY(110%);
+}
+.flying-box {
+  background-color: rgb(121, 121, 121);
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.logo {
+  margin: auto;
+  transform: scale(0.8);
+  transform: translateY(100%);
+  opacity: 0;
+}
+.page1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img/pexels-lumn-167699.jpg);
+  background-size: cover;
+}

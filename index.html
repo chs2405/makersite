@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Welcome to Maker Club</title>
-</head>
-<body>
-    <section class="landing-page">
-        <img src="./img/logo.png" alt="" srcset="">
+  </head>
+  <body>
+    <section class="page1">
+      <img class="logo" src="./img/logo.svg" alt="" srcset="" />
     </section>
-    <h1>Maker Club</h1>
-</body>
+    <div class="flying-page">
+      <div class="intro-text">
+        <h1 class="flying-title">
+          <span class="flying-text">WE ARE MAKER</span>
+        </h1>
+        <h1 class="flying-title">
+          <span class="flying-text">AND WE MAKE</span>
+        </h1>
+      </div>
+    </div>
+    <div class="flying-box"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
 </html>
