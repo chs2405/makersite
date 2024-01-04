@@ -32,7 +32,7 @@ tl.to(
     "<"
   )
   .to(
-    ".logo",
+    ".banner",
     { duration: 1, opacity: "1", ease: "expo.out", y: "0%" },
     "-=0.5"
   )
