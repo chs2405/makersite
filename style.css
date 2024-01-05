@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
 }
+
 body {
   background-image: linear-gradient(
     to bottom,
@@ -16,8 +17,8 @@ body {
 }
 .flying-page {
   position: fixed;
-  top: 0;
   left: 0;
+  top: 0;
   display: flex;
   width: 100%;
   height: 100vh;
@@ -30,14 +31,14 @@ body {
 .flying-title {
   color: #d19f72;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 6em;
+  font-size: 6vw;
   line-height: 1.6;
   background-color: #191919;
   overflow: hidden;
 }
 .flying-text {
   display: inline-block;
-  transform: translateY(110%);
+  transform: translateY(100%);
 }
 .flying-box {
   background-color: #333;
@@ -49,18 +50,22 @@ body {
   left: 0;
   z-index: 10;
 }
+.banner-container {
+  width: 80%;
+  display: flex;
+  height: 100vh;
+}
 #banner {
   margin: auto;
-  transform: scale(0.8);
   transform: translateY(100%);
   opacity: 0;
+  max-width: 100%;
 }
 .page {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
   flex-direction: column;
 }
 .navbutton {
@@ -69,30 +74,30 @@ body {
   position: fixed;
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
   z-index: 9;
-  opacity: 0;
-  transform: translateY(100%);
+  align-items: center;
+  margin: 2em 2em;
 }
-.bar1,
-.bar2,
-.bar3 {
+.bar {
+  opacity: 0;
   width: 35px;
   height: 5px;
   background-color: #333;
-  margin: 4px 50px;
+  margin-bottom: 8px;
   transition: 0.4s;
+  transform: translateY(100%);
 }
 .sidepanel {
-  height: 100vh;
-  width: 20%;
   position: fixed;
-  background-color: #191919;
-  transform: translateX(-100%);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100vh;
+  width: 15em;
+  background-color: #191919;
+  transform: translateX(-100%);
+  z-index: 8;
 }
 .sidepanel li {
   margin-top: 1em;
@@ -124,6 +129,7 @@ body {
   opacity: 0;
 }
 .swiper {
-  width: 600px;
+  width: 800px;
+  max-width: 100%;
   height: 300px;
 }

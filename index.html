@@ -22,9 +22,9 @@
   </head>
   <body>
     <div class="navbutton" onclick="navClick()">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
+      <div class="bar" id="bar1"></div>
+      <div class="bar" id="bar2"></div>
+      <div class="bar" id="bar3"></div>
     </div>
     <div class="sidepanel">
       <ul>
@@ -35,14 +35,12 @@
         <li>LINK</li>
       </ul>
     </div>
-    <div class="page" id="page1">
-      <img id="banner" src="./img/banner.svg" alt="" srcset="" />
-    </div>
-    <div class="page" id="page2">
+    <div class="page">
+      <div class="banner-container">
+        <img id="banner" src="./img/banner.svg" alt="" srcset="" />
+      </div>
       <img class="element" src="./img/logo.svg" alt="" srcset="" />
       <h2 class="element" id="p2h2">MAKER</h2>
-    </div>
-    <div class="page">
       <!-- Slider main container -->
       <div class="swiper">
         <!-- Additional required wrapper -->
@@ -57,25 +55,22 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-    </div>
-    <div class="page"></div>
-    <div class="page"></div>
-    <div class="flying-page">
-      <div class="intro-text">
-        <h1 class="flying-title">
-          <span class="flying-text">我们是创客</span>
-        </h1>
+      <div class="flying-page">
+        <div class="intro-text">
+          <h1 class="flying-title">
+            <span class="flying-text">我们是创客</span>
+          </h1>
 
-        <h1 class="flying-title">
-          <span class="flying-text">WE ARE MAKER</span>
-        </h1>
-        <h1 class="flying-title">
-          <span class="flying-text">AND WE MAKE</span>
-        </h1>
+          <h1 class="flying-title">
+            <span class="flying-text">WE ARE MAKER</span>
+          </h1>
+          <h1 class="flying-title">
+            <span class="flying-text">AND WE MAKE</span>
+          </h1>
+        </div>
       </div>
+      <div class="flying-box"></div>
     </div>
-    <div class="flying-box"></div>
-
     <script src="./app.js"></script>
   </body>
 </html>
