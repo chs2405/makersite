@@ -9,6 +9,13 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
+const swiper = new Swiper(".swiper", {
+  spaceBetween: 30,
+  /*   autoplay: {
+    delay: 2000,
+  }, */
+});
+
 let tl = gsap.timeline();
 gsap.registerPlugin(ScrollTrigger);
 gsap.defaults({ duration: 1, ease: "power4.out" });
@@ -118,21 +125,46 @@ function navClose() {
 gsap.to(".element", {
   x: "0%",
   opacity: 1,
+  duration: 0.5,
   scrollTrigger: {
     start: "top 40%",
+    end: "top 10%",
+    trigger: "#page2",
+    toggleActions: "restart reverse restart reverse",
+  },
+});
+gsap.to(".swipe-hint", {
+  scrollTrigger: {
+    trigger: ".swiper",
+    start: "20% bottom",
+    end: "80% center",
+    toggleActions: "restart restart restart none",
+  },
+  opacity: 0,
+  repeat: 2,
+  yoyo: true,
+  ease: "none",
+  duration: 1,
+});
+gsap.to(".swiper", {
+  scrollTrigger: {
+    trigger: "#swiper-container",
+    start: "top bottom",
     end: "top 20%",
-    //markers: true,
-    trigger: ".element",
-    toggleAction: "restart none none none",
+    scrub: true,
   },
+  scaleX: 1,
+  opacity: 1,
+  ease: "none",
+  duration: 1,
 });
-const swiper = new Swiper(".swiper", {
-  loop: true,
-  autoplay: {
-    delay: 2000,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+let viewButtonAnimation = gsap.to(".view-button-container", {
+  paused: true,
+  duration: 0.25,
+  ease: "power1.inOut",
+  scale: 1.1,
 });
+let viewButton = document.querySelector(".view-button-container");
+
+viewButton.addEventListener("mouseenter", () => viewButtonAnimation.play());
+viewButton.addEventListener("mouseleave", () => viewButtonAnimation.reverse());

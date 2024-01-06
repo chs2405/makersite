@@ -36,7 +36,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <title>Homepage</title>
+    <title>Welcome to Maker Club</title>
   </head>
   <body>
     <div class="navbutton" onclick="navClick()">
@@ -46,7 +46,7 @@
     </div>
     <div class="sidepanel">
       <ul>
-        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="./index.html">HOME</a></li>
         <li><a href="">LINK</a></li>
         <li><a href="">LINK</a></li>
         <li><a href="">LINK</a></li>
@@ -56,7 +56,46 @@
       <div class="container">
         <img id="banner" src="./img/banner.svg" alt="" srcset="" />
       </div>
+      <div class="container" id="page2">
+        <div class="vertical-container">
+          <img class="element" src="./img/logo.svg" alt="" srcset="" />
+          <h2 class="element" id="p2h2">MAKER</h2>
+        </div>
+      </div>
+      <div class="container" id="swiper-container">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <h2 class="swipe-hint">Swipe</h2>
+              Slide 1
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+        </div>
+        <div class="view-button-container">
+          <span lang="ch" class="view-button-text">更多照片</span>
+        </div>
+      </div>
+      <div class="flying-page">
+        <div class="intro-text">
+          <h1 class="flying-title">
+            <span lang="ch" class="flying-text">我们是创客</span>
+          </h1>
+
+          <h1 class="flying-title">
+            <span class="flying-text">WE ARE MAKER</span>
+          </h1>
+          <h1 class="flying-title">
+            <span class="flying-text">AND WE MAKE</span>
+          </h1>
+        </div>
+      </div>
+      <div class="flying-box"></div>
     </div>
-    <script src="./home.js"></script>
+    <script src="./about.js"></script>
   </body>
 </html>
