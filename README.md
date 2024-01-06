@@ -2,6 +2,8 @@
 ## Now building website
 
 -----------------------------------
+**2024/1/6**
+new page
 
 **2024/1/5**
 its now working responsively
