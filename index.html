@@ -31,6 +31,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
@@ -53,9 +54,14 @@
       </ul>
     </div>
     <div class="page">
-      <div class="container">
+      <div class="container" id="banner-container">
         <img id="banner" src="./img/banner.svg" alt="" srcset="" />
-        <h2 lang="ch" class="title">最新消息</h2>
+      </div>
+      <h2 lang="ch" class="title">最新消息</h2>
+      <div class="container" id="card-container">
+        <div class="card">
+          <img src="./img/Ellipse 1.svg" class="bgcircle" alt="" srcset="" />
+        </div>
       </div>
     </div>
     <script src="./home.js"></script>

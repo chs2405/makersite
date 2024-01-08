@@ -100,6 +100,30 @@ body {
   transform: translateX(0);
 }
 .title {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
   opacity: 1;
   font-size: 3em;
+  opacity: 0;
+}
+.card {
+  height: 60%;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.308);
+  backdrop-filter: blur(30px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-radius: 0.75rem;
+}
+#card-container {
+  display: none;
+  opacity: 0;
+}
+.bgcircle {
+  z-index: -2;
 }

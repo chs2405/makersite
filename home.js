@@ -1,3 +1,7 @@
+window.onbeforeunload = function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+};
 const lenis = new Lenis();
 
 lenis.on("scroll", (e) => {});
@@ -12,11 +16,6 @@ requestAnimationFrame(raf);
 let tl = gsap.timeline();
 gsap.registerPlugin(ScrollTrigger);
 gsap.defaults({ duration: 1, ease: "power4.out" });
-
-window.onbeforeunload = function () {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-};
 
 tl.to("#banner", {
   duration: 1,
@@ -42,8 +41,12 @@ tl.to("#banner", {
       y: "-100%",
       display: "none",
     },
-    "+=0.5"
-  );
+    "+=0.25"
+  )
+  .to(".title", { opacity: 1 }, "+=0.25")
+  .to("#banner-container", { display: "none" }, "<")
+  .to(".title", { scale: 0.5, top: "1em" })
+  .to("#card-container", { opacity: 1, display: "flex" }, "<");
 
 let clickCount = 0;
 function navClick() {

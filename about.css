@@ -6,6 +6,11 @@
 *:lang(ch) {
   font-family: "Noto Serif SC", serif;
 }
+@media (max-width: 767px) {
+  .swiper {
+    display: none !important;
+  }
+}
 body {
   background-image: linear-gradient(
     to bottom,
@@ -148,7 +153,7 @@ body {
 }
 .swiper {
   width: 800px;
-  max-width: 90%;
+
   text-align: center;
   display: flex;
   justify-content: center;
@@ -164,7 +169,7 @@ body {
 }
 .swiper-slide {
   background-color: #ffffff;
-  height: 300px;
+  height: 450px;
   border-radius: 2em;
   display: flex;
   justify-content: center;
@@ -174,10 +179,30 @@ body {
   cursor: grab;
   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
 }
+#slide1 {
+  background-image: url(./img/IMG_7396.JPG);
+  background-size: cover;
+  background-position: center;
+}
+#slide2 {
+  background-image: url(./img/mmexport1704699900577.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#slide3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#slide3 img {
+  scale: 0.4;
+}
 .swiper-slide:active {
   cursor: grabbing;
 }
 .swipe-hint {
+  color: #191919;
   opacity: 1;
   z-index: 9;
 }
